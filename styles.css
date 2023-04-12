@@ -1,12 +1,106 @@
+body {
+    background-color: black;
+    margin: 0 5%;
+}
+
+#container {
+    display:flex;
+    background-color: #e2dacd;
+    border: 1px solid black;
+}
+
+#photo {
+    width: 45%;
+    background: url(images/cole-keister-nfxIvG2B62I-unsplash.jpg) top/cover no-repeat; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 img {
-    width: 30%;
-    height: fit-content;
+    height: auto;
+    max-width: 50%;
+    opacity: .5;
+}
+
+#credit,
+#credit a {
+    font-family:"Montserrat", sans-serif;
+    color:#f7f0e8;
+    font-size: 8px;
 }
 
 p {
     font-family: 'Raleway', sans-serif;
 }
 
-form {
+p.one {
+    padding: 4em 3em 0 2em;
+}
+
+p.two {
+    padding: 0 0 2em 2em;
+}
+
+.form-section {
+    background-color: #f7f0e8;
+    padding: 1em 2em 2em 2em;
     font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 20px;
+}   
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f7f0e8;
+    box-sizing: border-box;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+}
+
+input {
+    border: .5px solid rgb(165 176 163);
+    padding: .5em;
+    width: 25vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(112, 197, 247);
+    box-shadow: 2px 2px 2px rgb(166, 217, 247);
+}
+
+input[type=password]:invalid {
+    outline: none;
+    border: 1px solid rgb(240, 12, 12);
+    box-shadow: 2px 2px 2px rgb(240, 12, 12);
+}
+
+button {
+    margin-top: 2em;
+    margin-left: 2em;
+    font: bold 16px 'Montserrat', sans-serif;
+    padding: .5em 2em;
+    border-radius: 8px;
+    background-color: rgb(67, 88, 67);
+    color: #ffffff;
+}
+
+p.three {
+    padding: 1em 0em 5em 2em;
+}
+
+p.three a {
+    color:rgb(67, 88, 67);
+    text-decoration: none;
 }
