@@ -18,6 +18,16 @@ body {
     align-items: center;
 }
 
+#odin {
+    background-color: rgba(45,66,51,.3);
+    color: #e2dae2;
+    opacity: 65%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    Flex-direction: column;
+    align-items: center;
+}
+
 img {
     height: auto;
     max-width: 50%;
