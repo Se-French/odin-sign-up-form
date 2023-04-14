@@ -63,7 +63,7 @@ h1 {
     font-size: 20px;
 }   
 
-form {
+#main {
     display: flex;
     flex-wrap: wrap;
     background-color: #f7f0e8;
