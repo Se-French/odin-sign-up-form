@@ -105,6 +105,8 @@ input[type=submit] {
     border-radius: 8px;
     background-color: rgb(67, 88, 67);
     color: #ffffff;
+    border:rgb(67, 88, 67);
+    box-shadow: 1px 1px #0a100e;
 }
 
 p.three {
