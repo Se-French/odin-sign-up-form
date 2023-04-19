@@ -90,13 +90,7 @@ input:focus {
     box-shadow: 2px 2px 2px rgb(166, 217, 247);
 }
 
-/*input[type=email]:not(:focus):invalid {
-    outline: none;
-    border: 1px solid rgb(241, 85, 85);
-    box-shadow: 2px 2px 2px rgb(236, 100, 100);
-}*/
-
-.error:focus {
+input.error {
     outline: none;
     border: 1px solid rgb(241, 85, 85);
     box-shadow: 2px 2px 2px rgb(236, 100, 100);
@@ -108,7 +102,11 @@ span {
 }
 
 span.error-message::after {
-    content: "Passwords do not match!"
+    content: "*Passwords do not match!"
+}
+
+span.email-error::after {
+    content: "*Please include '@' in email.";
 }
 
 input[type=submit] {
