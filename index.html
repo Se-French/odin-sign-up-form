@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
 </head>
 <body>
     <div id="container">
@@ -28,39 +29,41 @@
                 You <em>know</em> you want to.</p>
 
 
-            <form action="" method="">    
+            <form action="" method="" id="form">    
                 <div class="form-section">
                     <h1>Let's do this!</h1>
 
                     <div id="main">
                         <div class="input">
                             <label for="first-name">First Name</label>
-                            <input type="text" id="first-name" name="first-name">
+                            <input type="text" id="first-name" name="first_name" required>
                         </div>
                         <div class="input">
                             <label for="last-name">Last Name</label>
-                            <input type="text" id="last-name" name="last-name">
+                            <input type="text" id="last-name" name="last_name" required>
                         </div>
                         <div class="input">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email" required>
+                            <span id="email-error"></span>
                         </div>
                         <div class="input">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone">
+                            <input type="tel" id="phone" name="phone" required>
                         </div>
                         <div class="input">
                             <label for="pw">Password</label>
-                            <input type="password" id="pw" name="password">
+                            <input type="password" id="password" name="password" required>
                         </div>
                         <div class="input">
                             <label for="pwc">Confirm Password</label>
-                            <input type="password" id="pwc" name="confirm-pw">
+                            <input type="password" id="confirm_pw" name="confirm_pw" onkeyup="validate()" required>
+                            <span id="error-message"></span>
                         </div>
                     </div>
                 </div>
             
-                <input type="submit" value="Create Account">
+                <input type="submit" value="Create Account" id="submit">
             </form>
 
             <p class="three">Already have an account? <a href="">Log in</a></p>
