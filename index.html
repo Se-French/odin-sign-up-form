@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="javascript.js"></script>
+    <title>Sign Up Form</title>
 </head>
 <body>
     <div id="container">
@@ -27,9 +27,8 @@
 
             <p class="two">
                 You <em>know</em> you want to.</p>
-
-
-            <form action="" method="" id="form">    
+            
+            <form action="" method="" id="form" onsubmit="confirm()"> 
                 <div class="form-section">
                     <h1>Let's do this!</h1>
 
@@ -44,7 +43,7 @@
                         </div>
                         <div class="input">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required onkeyup="validateEmail()">
+                            <input type="email" id="email" name="email" required onblur="validateEmail()">
                             <span id="email-error"></span>
                         </div>
                         <div class="input">
@@ -57,7 +56,7 @@
                         </div>
                         <div class="input">
                             <label for="pwc">Confirm Password</label>
-                            <input type="password" id="confirm_pw" name="confirm_pw" onkeyup="validate()" required>
+                            <input type="password" id="confirm_pw" name="confirm_pw" onkeyup="timer()" required>
                             <span id="error-message"></span>
                         </div>
                     </div>

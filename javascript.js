@@ -1,3 +1,16 @@
+let counter = 0;
+function timer() {
+    ++counter;
+    setTimeout(nowVal, 1000);
+}
+
+function nowVal() {
+    --counter;
+    if (counter == 0){
+        validate();
+    }
+}
+
 function validate() {
     const password = document.getElementById('password');
     const confirm_pw = document.getElementById('confirm_pw');
@@ -29,5 +42,10 @@ function validateEmail() {
         email_error.className = 'email-error'
     }
 }
+
+function confirm(){
+    alert('Thanks for signing up!');
+}
+
 
     
